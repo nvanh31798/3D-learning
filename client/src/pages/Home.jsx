@@ -1,7 +1,12 @@
 import React from "react";
+import state from "../store";
+import { AnimatePresence } from "framer-motion";
+import { useSnapshot } from "valtio";
 
 const Home = () => {
-  return <div>Home</div>;
+  const snap = useSnapshot(state);
+
+  return <AnimatePresence>{}</AnimatePresence>;
 };
 
 export default Home;
